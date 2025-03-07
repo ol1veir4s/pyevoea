@@ -1,0 +1,18 @@
+{
+  "name": "examplesite",
+  "version": "1.0.0",
+  "description": "This guide covers the necessary bits. As the project evolves, it will only become more comprehensive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.31",
+    "tinacms": "^1.5.22",
+    "@tinacms/auth": "^1.0.3",
+    "next-tinacms-cloudinary": "^4.3.0"
+  }
+}

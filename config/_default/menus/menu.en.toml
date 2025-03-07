@@ -1,0 +1,6 @@
+#  menu items
+
+[[main]]
+  name = "Docs"
+  weight = 1
+  url = "docs/"

@@ -1,0 +1,5 @@
+*.py
+.venv
+public/*
+target/
+*.csv
