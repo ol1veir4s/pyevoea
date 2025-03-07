@@ -11,12 +11,12 @@ title = "Projects"
 {{< block "grid-2" >}}
 {{< column >}}
 
-# Rapid, Evolutionary, Multi-objective Community Detection Algorithms
+# Python Multiobjective Evolutionary Algorithms 
 
-**RE-MOCD** is a rapid evolutionary **multi-objective** community detection `Python` library with algorithms designed to efficiently analyze and manage large-scale graphs. By leveraging genetic algorithms techniques, it reveals complex community structures within your networks.
+**pyevoea** is a Python lib for efficient multi-objective evolutionary algorithms in community detection. It enhances performance for large-scale graph analysis. This project continues from [re-mocd](https://github.com/0l1ve1r4).  
 
 {{< tip "warning" >}}
-Have ideas for improvement? Open a [PR](https://github.com/0l1ve1r4/re-mocd/pulls) or report an [issue](https://github.com/0l1ve1r4/re-mocd/issues/new/choose) to help us evolve re-mocd further.
+Have ideas for improvement? Open a [PR](https://github.com/0l1ve1r4/re-mocd/pulls) or report an [issue](https://github.com/ol1veir4s/pyevoea/issues/new/choose) to help us evolve re-mocd further.
 {{< /tip >}}
 
 {{< tip >}}
@@ -26,7 +26,7 @@ Designed to handle large-scale networks efficiently and fast, while simultaneous
 
 {{< /tip >}}
 
-{{< button "docs/getting_started/" "Read the Docs" >}}{{< button "https://pypi.org/project/re-mocd/" "View on PyPI" >}}
+{{< button "docs/getting_started/" "Read the Docs" >}}{{< button "https://pypi.org/project/pyevoea/" "View on PyPI" >}}
 
 {{< /column >}}
 
