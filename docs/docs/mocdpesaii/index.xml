@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MocdPesaII on pyevoea</title>
+    <link>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/</link>
+    <description>Recent content in MocdPesaII on pyevoea</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>__generate_pareto_front()__</title>
+      <link>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/gen_pareto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/gen_pareto/</guid>
+      <description>In this post we show how to use the generate_pareto_front function from the PESA-II implementation for multi-objective community detection. This function returns a set of candidate community partitions (the Pareto front) along with their corresponding objective values.
+Step-by-Step Example Create a NetworkX Graph
+First, we create a NetworkX graph. In this example we use the Karate Club graph:
+1import networkx as nx 2 3# Create the Karate Club graph 4G = nx.</description>
+    </item>
+    
+    <item>
+      <title>__max_q()__</title>
+      <link>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/max_q/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/max_q/</guid>
+      <description>In this post we focus on the max_q function from the PESA-II implementation. This function selects the best community partition from the Pareto front by choosing the one with the highest modularity score ( Q ), where modularity is given by:
+$$ Q(C) = 1 - \text{intra}(C) - \text{inter}(C). $$
+Step-by-Step Example Create a NetworkX Graph
+As before, begin by creating a NetworkX graph. We again use the Karate Club graph:</description>
+    </item>
+    
+    <item>
+      <title>__min_max()__</title>
+      <link>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/minimax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/minimax/</guid>
+      <description>In this post, we’ll walk through using the min_max function. This method goes a step further than simply picking the partition with the highest modularity. Instead, it compares the Pareto front from your actual network with Pareto fronts generated from a set of random networks (of the same scale) and selects the community partition that deviates the most from what you would expect by chance.
+Step-by-Step Example Create a NetworkX Graph</description>
+    </item>
+    
+  </channel>
+</rss>

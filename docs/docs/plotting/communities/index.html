@@ -9,27 +9,33 @@
 <link rel="mask-icon" href='https://ol1veir4s.github.io/pyevoea/favicons/safari-pinned-tab.svg' color="#004750">
 <link rel="shortcut icon" href='https://ol1veir4s.github.io/pyevoea/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://ol1veir4s.github.io/pyevoea/favicons/browserconfig.xml'>
-<title>re-mocd | pyevoea</title><meta property="og:title" content="re-mocd" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ol1veir4s.github.io/pyevoea/" />
-<meta itemprop="name" content="re-mocd">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="re-mocd"/>
-<meta name="twitter:description" content=""/>
+<title>Visualizing Communities Detected | pyevoea</title><meta property="og:title" content="Visualizing Communities Detected" />
+<meta property="og:description" content="Introduction This tutorial demonstrates how to generate and visualize a graph with community structures detected using the NSGA-II algorithm. We will:
+Generate a synthetic graph using the LFR benchmark model. Detect communities using NSGA-II-based detection from re_mocd. Use NetworkX and Seaborn to visualize the communities with distinct colors. Prerequisites Ensure you have the required libraries installed:
+1pip install networkx matplotlib seaborn re_mocd Step 1: Generate a Graph with Community Structure We use the LFR benchmark graph to create a synthetic network with realistic community structures." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ol1veir4s.github.io/pyevoea/docs/plotting/communities/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2025-03-08T14:34:27-03:00" />
+<meta itemprop="name" content="Visualizing Communities Detected">
+<meta itemprop="description" content="Introduction This tutorial demonstrates how to generate and visualize a graph with community structures detected using the NSGA-II algorithm. We will:
+Generate a synthetic graph using the LFR benchmark model. Detect communities using NSGA-II-based detection from re_mocd. Use NetworkX and Seaborn to visualize the communities with distinct colors. Prerequisites Ensure you have the required libraries installed:
+1pip install networkx matplotlib seaborn re_mocd Step 1: Generate a Graph with Community Structure We use the LFR benchmark graph to create a synthetic network with realistic community structures.">
+<meta itemprop="dateModified" content="2025-03-08T14:34:27-03:00" />
+<meta itemprop="wordCount" content="264">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Visualizing Communities Detected"/>
+<meta name="twitter:description" content="Introduction This tutorial demonstrates how to generate and visualize a graph with community structures detected using the NSGA-II algorithm. We will:
+Generate a synthetic graph using the LFR benchmark model. Detect communities using NSGA-II-based detection from re_mocd. Use NetworkX and Seaborn to visualize the communities with distinct colors. Prerequisites Ensure you have the required libraries installed:
+1pip install networkx matplotlib seaborn re_mocd Step 1: Generate a Graph with Community Structure We use the LFR benchmark graph to create a synthetic network with realistic community structures."/>
 
 <link rel="stylesheet" href="https://ol1veir4s.github.io/pyevoea/css/styles.ab9b8ade55fb373f15fd004adad9e4d88504507124159c4020a67ccfab38ba030f9fd81793e55b2cb14c8d3cb404c41f504ec64f38bace3dd136c79030c48b85.css" integrity="sha512-q5uK3lX7Nz8V/QBK2tnk2IUEUHEkFZxAIKZ8z6s4ugMPn9gXk&#43;VbLLFMjTy0BMQfUE7GTzi6zj3RNseQMMSLhQ==">
+<meta name="description" content="Introduction This tutorial demonstrates how to generate and visualize a graph with community structures detected using the NSGA-II algorithm. We will:
+Generate a synthetic graph using the LFR benchmark model. Detect communities using NSGA-II-based detection from re_mocd. Use NetworkX and Seaborn to visualize the communities with distinct colors. Prerequisites Ensure you have the required libraries installed:
+1pip install networkx matplotlib seaborn re_mocd Step 1: Generate a Graph with Community Structure We use the LFR benchmark graph to create a synthetic network with realistic community structures.">
 
-    
-      
-    
-      
-    
-      
-    
-      
 </head>
-<body class="page-home" id="pagetop">
+<body class="page-page" id="pagetop">
   <header class="nav_header">
 <nav class="wrap nav menu">
 	<a href='https://ol1veir4s.github.io/pyevoea/' class="nav_brand">
@@ -49,7 +55,7 @@
 </svg>
     </label>
     
-    <input type="search" class="search_field  standardize-input" placeholder="Search site" id="find" autocomplete="off" data-scope=''>
+    <input type="search" class="search_field  standardize-input" placeholder="Search docs" id="find" autocomplete="off" data-scope='docs'>
     <div class="search_results results"></div>
   </div>
 		</li>
@@ -72,40 +78,230 @@
 </nav>
 
   </header>
-  <div class="main wrap pt-4">
-      <div class="content">
-<div class="content">
-  <section class="grid-2"  >
-<div><h1 id="multiobjective-evolutionary-algorithms" class=link_owner>
-  Multiobjective Evolutionary Algorithms
-  <a href="#multiobjective-evolutionary-algorithms" class="link icon">
+  <div class="main wrap pt-4"><div class="grid-auto"><aside class="aside menu">
+  <div>
+    <label class="aside_toggle toggle" title='Docs Menu' role="button">Docs Menu <svg class="icon icon_carly">
+  <use href="#carly"></use>
+</svg></label>
+  </div>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://ol1veir4s.github.io/pyevoea/docs/" class="group"></a></h2>
+      <section class="" id="docs-">
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://ol1veir4s.github.io/pyevoea/docs/getting_started/" class="group">Getting Started</a></h2>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://ol1veir4s.github.io/pyevoea/docs/nsga/" class="group">MocdNsgaII</a></h2>
+      <section class="" id="docs-mocdnsgaii">
+        <h3 class="section_link"><a id="docs-__generate_pareto_front__" href="https://ol1veir4s.github.io/pyevoea/docs/nsga/gen_pareto/">__generate_pareto_front()__</a></h3>
+        <nav id="toc-__generate_pareto_front__">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-example">Step-by-Step Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-__max_q__" href="https://ol1veir4s.github.io/pyevoea/docs/nsga/max_q/">__max_q()__</a></h3>
+        <nav id="toc-__max_q__">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-example">Step-by-Step Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/" class="group">MocdPesaII</a></h2>
+      <section class="" id="docs-mocdpesaii">
+        <h3 class="section_link"><a id="docs-__generate_pareto_front__" href="https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/gen_pareto/">__generate_pareto_front()__</a></h3>
+        <nav id="toc-__generate_pareto_front__">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-example">Step-by-Step Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-__max_q__" href="https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/max_q/">__max_q()__</a></h3>
+        <nav id="toc-__max_q__">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-example">Step-by-Step Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-__min_max__" href="https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/minimax/">__min_max()__</a></h3>
+        <nav id="toc-__min_max__">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-example">Step-by-Step Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://ol1veir4s.github.io/pyevoea/docs/plotting/" class="group">Plotting</a></h2>
+      <section class="" id="docs-plotting">
+        <h3 class="section_link active"><a id="docs-visualizing-communities-detected" href="https://ol1veir4s.github.io/pyevoea/docs/plotting/communities/">Visualizing Communities Detected</a></h3>
+        <nav id="toc-visualizing-communities-detected">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#step-1-generate-a-graph-with-community-structure">Step 1: Generate a Graph with Community Structure</a></li>
+    <li><a href="#step-2-detect-communities">Step 2: Detect Communities</a></li>
+    <li><a href="#step-3-visualize-the-detected-communities">Step 3: Visualize the Detected Communities</a></li>
+    <li><a href="#output">Output</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-visualizing-the-pareto-front" href="https://ol1veir4s.github.io/pyevoea/docs/plotting/pareto/">Visualizing the Pareto Front</a></h3>
+        <nav id="toc-visualizing-the-pareto-front">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-guide">Step-by-Step Guide</a></li>
+        <li><a href="#full-code-example">Full Code Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </section>
+  </section>
+      </section>
+  </section>
+</aside>
+
+  <main class="content">
+    <h1>Visualizing Communities Detected</h1><h2 id="introduction" class=link_owner>
+  Introduction
+  <a href="#introduction" class="link icon">
     <svg>
       <use xlink:href="#anchor-link"></use>
     </svg>
   </a>
-</h1>
-<p><strong>pyevoea</strong> is a Python lib for efficient multi-objective evolutionary algorithms in community detection. It enhances performance for large-scale graph analysis. This project continues from <a href="https://github.com/0l1ve1r4/re-mocd">re-mocd</a>.</p>
-<div class="tip tip_warning">
-  Have ideas for improvement? Open a <a href="https://github.com/ol1veir4s/pyevoea/pulls">PR</a> or report an <a href="https://github.com/ol1veir4s/pyevoea/issues/new/choose">issue</a> to help us evolve re-mocd further.
-</div>
-<p><a href="docs/getting_started/" class="button">Read the Docs</a>
-<a href="https://pypi.org/project/pyevoea/" class="button">View on PyPI</a></p>
-</div>
+</h2>
+<p>This tutorial demonstrates how to generate and visualize a graph with community structures detected using the <code>NSGA-II</code> algorithm. We will:</p>
+<ol>
+<li>Generate a synthetic graph using the <strong>LFR benchmark model</strong>.</li>
+<li>Detect communities using <strong>NSGA-II-based detection from re_mocd</strong>.</li>
+<li>Use <strong>NetworkX</strong> and <strong>Seaborn</strong> to visualize the communities with distinct colors.</li>
+</ol>
+<h2 id="prerequisites" class=link_owner>
+  Prerequisites
+  <a href="#prerequisites" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>Ensure you have the required libraries installed:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">pip install networkx matplotlib seaborn re_mocd
+</span></span></code></pre></div><h2 id="step-1-generate-a-graph-with-community-structure" class=link_owner>
+  Step 1: Generate a Graph with Community Structure
+  <a href="#step-1-generate-a-graph-with-community-structure" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>We use the <strong>LFR benchmark graph</strong> to create a synthetic network with realistic community structures.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="kn">import</span> <span class="nn">re_mocd</span> 
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="kn">from</span> <span class="nn">networkx.generators.community</span> <span class="kn">import</span> <span class="n">LFR_benchmark_graph</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="c1"># Set a clean Seaborn theme</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&#34;white&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="c1"># LFR benchmark parameters</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">100</span>  <span class="c1"># Number of nodes</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="n">tau1</span> <span class="o">=</span> <span class="mi">3</span>  <span class="c1"># Degree distribution exponent</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="n">tau2</span> <span class="o">=</span> <span class="mf">1.5</span>  <span class="c1"># Community size distribution exponent</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="n">mu</span> <span class="o">=</span> <span class="mf">0.1</span>  <span class="c1"># Mixing parameter (controls inter-community edges)</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">
+</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="c1"># Generate the LFR benchmark graph</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="n">G</span> <span class="o">=</span> <span class="n">LFR_benchmark_graph</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">tau1</span><span class="p">,</span> <span class="n">tau2</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">average_degree</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">min_community</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="step-2-detect-communities" class=link_owner>
+  Step 2: Detect Communities
+  <a href="#step-2-detect-communities" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1"># Run the NSGA-II community detection algorithm</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">communities</span> <span class="o">=</span> <span class="n">re_mocd</span><span class="o">.</span><span class="n">nsga_ii</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="step-3-visualize-the-detected-communities" class=link_owner>
+  Step 3: Visualize the Detected Communities
+  <a href="#step-3-visualize-the-detected-communities" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>To enhance visualization, we assign distinct colors to each detected community and display the graph.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1"># Get unique community IDs</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">unique_comms</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">communities</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1"># Generate a color palette for communities</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="n">palette</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s2">&#34;hsv&#34;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">unique_comms</span><span class="p">))</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="n">comm_color_map</span> <span class="o">=</span> <span class="p">{</span><span class="n">comm</span><span class="p">:</span> <span class="n">palette</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">comm</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">unique_comms</span><span class="p">)}</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl">
+</span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="c1"># Assign colors to nodes</span>
+</span></span><span class="line"><span class="ln">9</span><span class="cl"><span class="n">node_colors</span> <span class="o">=</span> <span class="p">[</span><span class="n">comm_color_map</span><span class="p">[</span><span class="n">communities</span><span class="p">[</span><span class="n">node</span><span class="p">]]</span> <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()]</span>
+</span></span></code></pre></div><p>Plot using <code>matplotlib.pyplot</code>:</p>
+<pre tabindex="0"><code>pos = nx.spring_layout(G, seed=42)
 
+plt.figure(figsize=(16, 12))
 
-<div><center>
+nx.draw_networkx_edges(G, pos, edge_color=&#39;gray&#39;, alpha=0.7, width=2)
+
+nx.draw_networkx_nodes(G, pos, node_color=node_colors, edgecolors=&#39;black&#39;, linewidths=1.5, node_size=600)
+plt.axis(&#39;off&#39;)
+plt.show()
+</code></pre><h2 id="output" class=link_owner>
+  Output
+  <a href="#output" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h2>
+<p>...
+
 <picture class="nav_logo" data-lit="https://ol1veir4s.github.io/pyevoea/images/index.png" data-dark="https://ol1veir4s.github.io/pyevoea/images/index.png">
-  <img src="https://ol1veir4s.github.io/pyevoea/images/index.png" alt="Visual Comparison of Algorithms">
+  <img src="https://ol1veir4s.github.io/pyevoea/images/index.png" alt="Image alt text">
 </picture>
-<p>Example output from an <a href="https://networkx.org/documentation/stable/reference/generated/networkx.generators.community.LFR_benchmark_graph.html">LFR benchmark graph</a> made in 0.42ms.</p>
-</center>
+
+...</p>
+
+    <div class="pager">
+  
+
+  
+    
+    <div class="pager_item next">
+      <a href="https://ol1veir4s.github.io/pyevoea/docs/plotting/pareto/" class="pager_link button" title="Visualizing the Pareto Front" rel="next">
+        <span class="pager_label">Visualizing the Pareto Front</span>
+      </a>
+    </div>
+    
+  
 </div>
-
-</section>
-
-
+  </main>
 </div>
-      </div></div><script>
+</div><script>
 
 const copy_text = 'Copy';
 const copied_text = 'Copied';

@@ -78,6 +78,7 @@ nx.draw_networkx_edges(G, pos, edge_color='gray', alpha=0.7, width=2)
 nx.draw_networkx_nodes(G, pos, node_color=node_colors, edgecolors='black', linewidths=1.5, node_size=600)
 plt.axis('off')
 plt.show()
+
 ```
 
 ## Output

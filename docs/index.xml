@@ -6,49 +6,82 @@
     <description>Recent content in re-mocd on pyevoea</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://ol1veir4s.github.io/pyevoea/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Visualizing Communities Detected</title>
-      <link>https://ol1veir4s.github.io/pyevoea/docs/examples/ploting/</link>
+      <title>__generate_pareto_front()__</title>
+      <link>https://ol1veir4s.github.io/pyevoea/docs/nsga/gen_pareto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ol1veir4s.github.io/pyevoea/docs/examples/ploting/</guid>
+      <guid>https://ol1veir4s.github.io/pyevoea/docs/nsga/gen_pareto/</guid>
+      <description>In this post, we will show you how to use the generate_pareto_front() function from MocdNsgaII class. This function returns a list of candidate community partitions along with their corresponding objective values, giving you a set of non-dominated solutions (the Pareto front).
+Step-by-Step Example Create a NetworkX Graph
+First, create a graph using NetworkX. For example, you might use the famous Karate Club graph:
+1import networkx as nx 2 3# Create the Karate Club graph 4G = nx.</description>
+    </item>
+    
+    <item>
+      <title>__max_q()__</title>
+      <link>https://ol1veir4s.github.io/pyevoea/docs/nsga/max_q/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ol1veir4s.github.io/pyevoea/docs/nsga/max_q/</guid>
+      <description>In this post, we focus on the max_q function, which helps you select a single community partition from the Pareto front based on the modularity score ( Q ). By choosing the solution with the maximum ( Q ), the function provides a recommendation that balances intra-community density and inter-community sparsity.
+Step-by-Step Example Create a NetworkX Graph
+Begin by creating a graph. We again use the Karate Club graph as an example:</description>
+    </item>
+    
+    <item>
+      <title>__generate_pareto_front()__</title>
+      <link>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/gen_pareto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/gen_pareto/</guid>
+      <description>In this post we show how to use the generate_pareto_front function from the PESA-II implementation for multi-objective community detection. This function returns a set of candidate community partitions (the Pareto front) along with their corresponding objective values.
+Step-by-Step Example Create a NetworkX Graph
+First, we create a NetworkX graph. In this example we use the Karate Club graph:
+1import networkx as nx 2 3# Create the Karate Club graph 4G = nx.</description>
+    </item>
+    
+    <item>
+      <title>__max_q()__</title>
+      <link>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/max_q/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/max_q/</guid>
+      <description>In this post we focus on the max_q function from the PESA-II implementation. This function selects the best community partition from the Pareto front by choosing the one with the highest modularity score ( Q ), where modularity is given by:
+$$ Q(C) = 1 - \text{intra}(C) - \text{inter}(C). $$
+Step-by-Step Example Create a NetworkX Graph
+As before, begin by creating a NetworkX graph. We again use the Karate Club graph:</description>
+    </item>
+    
+    <item>
+      <title>__min_max()__</title>
+      <link>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/minimax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/minimax/</guid>
+      <description>In this post, we’ll walk through using the min_max function. This method goes a step further than simply picking the partition with the highest modularity. Instead, it compares the Pareto front from your actual network with Pareto fronts generated from a set of random networks (of the same scale) and selects the community partition that deviates the most from what you would expect by chance.
+Step-by-Step Example Create a NetworkX Graph</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Communities Detected</title>
+      <link>https://ol1veir4s.github.io/pyevoea/docs/plotting/communities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ol1veir4s.github.io/pyevoea/docs/plotting/communities/</guid>
       <description>Introduction This tutorial demonstrates how to generate and visualize a graph with community structures detected using the NSGA-II algorithm. We will:
 Generate a synthetic graph using the LFR benchmark model. Detect communities using NSGA-II-based detection from re_mocd. Use NetworkX and Seaborn to visualize the communities with distinct colors. Prerequisites Ensure you have the required libraries installed:
 1pip install networkx matplotlib seaborn re_mocd Step 1: Generate a Graph with Community Structure We use the LFR benchmark graph to create a synthetic network with realistic community structures.</description>
     </item>
     
     <item>
-      <title>Non-Dominated Sorting Genetic Algorithm 2</title>
-      <link>https://ol1veir4s.github.io/pyevoea/docs/getting_started/nsga_ii/</link>
+      <title>Visualizing the Pareto Front</title>
+      <link>https://ol1veir4s.github.io/pyevoea/docs/plotting/pareto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ol1veir4s.github.io/pyevoea/docs/getting_started/nsga_ii/</guid>
-      <description>Introduction In this guide, we&#39;ll explore how to use the nsga_ii function for community detection on a NetworkX graph. The NSGA-II algorithm employs a multi-objective approach to identify community structures within networks.
-Prerequisites Ensure that you have installed the necessary libraries and the module:
-1pip list | grep re-mocd If you&#39;re using a unix-based system, you should see:
-re_mocd 0.2.3
-Step 1: Prepare Your Graph We will use a sample graph for demonstration purposes.</description>
-    </item>
-    
-    <item>
-      <title>Pareto Envelope-Based Selection Algorithm 2</title>
-      <link>https://ol1veir4s.github.io/pyevoea/docs/getting_started/pesa_ii/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ol1veir4s.github.io/pyevoea/docs/getting_started/pesa_ii/</guid>
-      <description>Introduction This tutorial demonstrates how to use both pesa_ii_minimax and pesa_ii_maxq functions to detect communities in a NetworkX graph. Both algorithms take a graph as input and return a mapping of node IDs to their detected community IDs. The debug parameter is available to control the verbosity of the output.
-Prerequisites Before you begin, ensure you have installed the required libraries and the module containing these algorithms:
-1pip install your_module_name Step 1: Prepare Your Graph For demonstration purposes, we use the classic Karate Club graph from NetworkX:</description>
-    </item>
-    
-    <item>
-      <title>Checking fitness of a partition</title>
-      <link>https://ol1veir4s.github.io/pyevoea/docs/getting_started/fitness/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ol1veir4s.github.io/pyevoea/docs/getting_started/fitness/</guid>
-      <description>Introduction This tutorial demonstrates how to get the score of a graph given a community partition using the fitness function. This score measures the quality of the community structure.
-Step 1: Prepare Your Graph and Partition Start by generating a sample graph and creating a partition. In this example, we use the Karate Club graph and define a simple partition:
-1import networkx as nx 2 3# Create a sample graph 4G = nx.</description>
+      <guid>https://ol1veir4s.github.io/pyevoea/docs/plotting/pareto/</guid>
+      <description>In this tutorial, we’ll show you how to visualize the Pareto front produced by the community detection algorithm. The Pareto front is a set of candidate solutions that trade off the two objectives—usually the intra-community connectivity and the inter-community separation. By plotting these objective values, you can visually assess the trade-offs between different solutions.
+Step-by-Step Guide Generate the Pareto Front
+First, run your community detection algorithm to generate the Pareto front.</description>
     </item>
     
     <item>

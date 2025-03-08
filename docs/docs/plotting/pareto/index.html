@@ -9,27 +9,33 @@
 <link rel="mask-icon" href='https://ol1veir4s.github.io/pyevoea/favicons/safari-pinned-tab.svg' color="#004750">
 <link rel="shortcut icon" href='https://ol1veir4s.github.io/pyevoea/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://ol1veir4s.github.io/pyevoea/favicons/browserconfig.xml'>
-<title>re-mocd | pyevoea</title><meta property="og:title" content="re-mocd" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ol1veir4s.github.io/pyevoea/" />
-<meta itemprop="name" content="re-mocd">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="re-mocd"/>
-<meta name="twitter:description" content=""/>
+<title>Visualizing the Pareto Front | pyevoea</title><meta property="og:title" content="Visualizing the Pareto Front" />
+<meta property="og:description" content="In this tutorial, we’ll show you how to visualize the Pareto front produced by the community detection algorithm. The Pareto front is a set of candidate solutions that trade off the two objectives—usually the intra-community connectivity and the inter-community separation. By plotting these objective values, you can visually assess the trade-offs between different solutions.
+Step-by-Step Guide Generate the Pareto Front
+First, run your community detection algorithm to generate the Pareto front." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ol1veir4s.github.io/pyevoea/docs/plotting/pareto/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2025-03-08T14:34:27-03:00" />
+<meta itemprop="name" content="Visualizing the Pareto Front">
+<meta itemprop="description" content="In this tutorial, we’ll show you how to visualize the Pareto front produced by the community detection algorithm. The Pareto front is a set of candidate solutions that trade off the two objectives—usually the intra-community connectivity and the inter-community separation. By plotting these objective values, you can visually assess the trade-offs between different solutions.
+Step-by-Step Guide Generate the Pareto Front
+First, run your community detection algorithm to generate the Pareto front.">
+<meta itemprop="dateModified" content="2025-03-08T14:34:27-03:00" />
+<meta itemprop="wordCount" content="356">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Visualizing the Pareto Front"/>
+<meta name="twitter:description" content="In this tutorial, we’ll show you how to visualize the Pareto front produced by the community detection algorithm. The Pareto front is a set of candidate solutions that trade off the two objectives—usually the intra-community connectivity and the inter-community separation. By plotting these objective values, you can visually assess the trade-offs between different solutions.
+Step-by-Step Guide Generate the Pareto Front
+First, run your community detection algorithm to generate the Pareto front."/>
 
 <link rel="stylesheet" href="https://ol1veir4s.github.io/pyevoea/css/styles.ab9b8ade55fb373f15fd004adad9e4d88504507124159c4020a67ccfab38ba030f9fd81793e55b2cb14c8d3cb404c41f504ec64f38bace3dd136c79030c48b85.css" integrity="sha512-q5uK3lX7Nz8V/QBK2tnk2IUEUHEkFZxAIKZ8z6s4ugMPn9gXk&#43;VbLLFMjTy0BMQfUE7GTzi6zj3RNseQMMSLhQ==">
+<meta name="description" content="In this tutorial, we’ll show you how to visualize the Pareto front produced by the community detection algorithm. The Pareto front is a set of candidate solutions that trade off the two objectives—usually the intra-community connectivity and the inter-community separation. By plotting these objective values, you can visually assess the trade-offs between different solutions.
+Step-by-Step Guide Generate the Pareto Front
+First, run your community detection algorithm to generate the Pareto front.">
 
-    
-      
-    
-      
-    
-      
-    
-      
 </head>
-<body class="page-home" id="pagetop">
+<body class="page-page" id="pagetop">
   <header class="nav_header">
 <nav class="wrap nav menu">
 	<a href='https://ol1veir4s.github.io/pyevoea/' class="nav_brand">
@@ -49,7 +55,7 @@
 </svg>
     </label>
     
-    <input type="search" class="search_field  standardize-input" placeholder="Search site" id="find" autocomplete="off" data-scope=''>
+    <input type="search" class="search_field  standardize-input" placeholder="Search docs" id="find" autocomplete="off" data-scope='docs'>
     <div class="search_results results"></div>
   </div>
 		</li>
@@ -72,40 +78,206 @@
 </nav>
 
   </header>
-  <div class="main wrap pt-4">
-      <div class="content">
-<div class="content">
-  <section class="grid-2"  >
-<div><h1 id="multiobjective-evolutionary-algorithms" class=link_owner>
-  Multiobjective Evolutionary Algorithms
-  <a href="#multiobjective-evolutionary-algorithms" class="link icon">
+  <div class="main wrap pt-4"><div class="grid-auto"><aside class="aside menu">
+  <div>
+    <label class="aside_toggle toggle" title='Docs Menu' role="button">Docs Menu <svg class="icon icon_carly">
+  <use href="#carly"></use>
+</svg></label>
+  </div>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://ol1veir4s.github.io/pyevoea/docs/" class="group"></a></h2>
+      <section class="" id="docs-">
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://ol1veir4s.github.io/pyevoea/docs/getting_started/" class="group">Getting Started</a></h2>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://ol1veir4s.github.io/pyevoea/docs/nsga/" class="group">MocdNsgaII</a></h2>
+      <section class="" id="docs-mocdnsgaii">
+        <h3 class="section_link"><a id="docs-__generate_pareto_front__" href="https://ol1veir4s.github.io/pyevoea/docs/nsga/gen_pareto/">__generate_pareto_front()__</a></h3>
+        <nav id="toc-__generate_pareto_front__">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-example">Step-by-Step Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-__max_q__" href="https://ol1veir4s.github.io/pyevoea/docs/nsga/max_q/">__max_q()__</a></h3>
+        <nav id="toc-__max_q__">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-example">Step-by-Step Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/" class="group">MocdPesaII</a></h2>
+      <section class="" id="docs-mocdpesaii">
+        <h3 class="section_link"><a id="docs-__generate_pareto_front__" href="https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/gen_pareto/">__generate_pareto_front()__</a></h3>
+        <nav id="toc-__generate_pareto_front__">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-example">Step-by-Step Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-__max_q__" href="https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/max_q/">__max_q()__</a></h3>
+        <nav id="toc-__max_q__">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-example">Step-by-Step Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-__min_max__" href="https://ol1veir4s.github.io/pyevoea/docs/mocdpesaii/minimax/">__min_max()__</a></h3>
+        <nav id="toc-__min_max__">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-example">Step-by-Step Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://ol1veir4s.github.io/pyevoea/docs/plotting/" class="group">Plotting</a></h2>
+      <section class="" id="docs-plotting">
+        <h3 class="section_link"><a id="docs-visualizing-communities-detected" href="https://ol1veir4s.github.io/pyevoea/docs/plotting/communities/">Visualizing Communities Detected</a></h3>
+        <nav id="toc-visualizing-communities-detected">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#step-1-generate-a-graph-with-community-structure">Step 1: Generate a Graph with Community Structure</a></li>
+    <li><a href="#step-2-detect-communities">Step 2: Detect Communities</a></li>
+    <li><a href="#step-3-visualize-the-detected-communities">Step 3: Visualize the Detected Communities</a></li>
+    <li><a href="#output">Output</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link active"><a id="docs-visualizing-the-pareto-front" href="https://ol1veir4s.github.io/pyevoea/docs/plotting/pareto/">Visualizing the Pareto Front</a></h3>
+        <nav id="toc-visualizing-the-pareto-front">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#step-by-step-guide">Step-by-Step Guide</a></li>
+        <li><a href="#full-code-example">Full Code Example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </section>
+  </section>
+      </section>
+  </section>
+</aside>
+
+  <main class="content">
+    <h1>Visualizing the Pareto Front</h1><p>In this tutorial, we’ll show you how to visualize the Pareto front produced by the community detection algorithm. The Pareto front is a set of candidate solutions that trade off the two objectives—usually the intra-community connectivity and the inter-community separation. By plotting these objective values, you can visually assess the trade-offs between different solutions.</p>
+<h3 id="step-by-step-guide" class=link_owner>
+  Step-by-Step Guide
+  <a href="#step-by-step-guide" class="link icon">
     <svg>
       <use xlink:href="#anchor-link"></use>
     </svg>
   </a>
-</h1>
-<p><strong>pyevoea</strong> is a Python lib for efficient multi-objective evolutionary algorithms in community detection. It enhances performance for large-scale graph analysis. This project continues from <a href="https://github.com/0l1ve1r4/re-mocd">re-mocd</a>.</p>
-<div class="tip tip_warning">
-  Have ideas for improvement? Open a <a href="https://github.com/ol1veir4s/pyevoea/pulls">PR</a> or report an <a href="https://github.com/ol1veir4s/pyevoea/issues/new/choose">issue</a> to help us evolve re-mocd further.
+</h3>
+<ol>
+<li>
+<p><strong>Generate the Pareto Front</strong></p>
+<p>First, run your community detection algorithm to generate the Pareto front. For example, if you are using our PESA-II or NSGA-II implementation, you might call:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1"># Generate Pareto front (each candidate is a tuple: (partition, [intra, inter]))</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">pareto_front</span> <span class="o">=</span> <span class="n">detector</span><span class="o">.</span><span class="n">generate_pareto_front</span><span class="p">()</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Extract Objective Values</strong></p>
+<p>Next, extract the objective values from each candidate. Here we assume that each candidate’s objectives is a list or tuple with two values (e.g., intra and inter).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1"># Extract objective values from each candidate solution</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">intra_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">obj</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span> <span class="ow">in</span> <span class="n">pareto_front</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">inter_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">obj</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span> <span class="ow">in</span> <span class="n">pareto_front</span><span class="p">]</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Plot Using Matplotlib</strong></p>
+<p>Use Matplotlib to create a scatter plot where the x-axis corresponds to the intra objective and the y-axis corresponds to the inter objective.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">intra_values</span><span class="p">,</span> <span class="n">inter_values</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&#34;Intra Objective Value&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&#34;Inter Objective Value&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&#34;Pareto Front of Candidate Community Solutions&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">9</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="full-code-example" class=link_owner>
+  Full Code Example
+  <a href="#full-code-example" class="link icon">
+    <svg>
+      <use xlink:href="#anchor-link"></use>
+    </svg>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="kn">import</span> <span class="nn">pyevoea</span>  <span class="c1"># Replace with your module name</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="c1"># 1. Create a graph (using the Karate Club graph as an example)</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">karate_club_graph</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="c1"># 2. Initialize the community detection algorithm</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="n">detector</span> <span class="o">=</span> <span class="n">pyevoea</span><span class="o">.</span><span class="n">MocdPesaII</span><span class="p">(</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="n">graph</span><span class="o">=</span><span class="n">G</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">    <span class="n">debug_level</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">    <span class="n">rand_networks</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">    <span class="n">pop_size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">    <span class="n">num_gens</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">    <span class="n">cross_rate</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">    <span class="n">mut_rate</span><span class="o">=</span><span class="mf">0.2</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">
+</span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="c1"># 3. Generate the Pareto front</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="n">pareto_front</span> <span class="o">=</span> <span class="n">detector</span><span class="o">.</span><span class="n">generate_pareto_front</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">
+</span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="c1"># 4. Extract objective values (assume objectives: [intra, inter])</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="n">intra_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">obj</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span> <span class="ow">in</span> <span class="n">pareto_front</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="n">inter_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">obj</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span> <span class="ow">in</span> <span class="n">pareto_front</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl">
+</span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="c1"># 5. Plot the Pareto front</span>
+</span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+</span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">intra_values</span><span class="p">,</span> <span class="n">inter_values</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">29</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&#34;Intra Objective Value&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">30</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&#34;Inter Objective Value&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">31</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&#34;Pareto Front of Candidate Community Solutions&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">32</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">33</span><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span></code></pre></div><p>By following these steps, you’ll have a clear scatter plot that shows the trade-offs between the two objectives, helping you visualize the landscape of candidate solutions.</p>
+
+    <div class="pager">
+  
+    
+    <div class="pager_item prev">
+      <a href="https://ol1veir4s.github.io/pyevoea/docs/plotting/communities/" class="pager_link button" title="Visualizing Communities Detected" rel="prev">
+        <span class="pager_label">Visualizing Communities Detected</span>
+      </a>
+    </div>
+    
+  
+
+  
 </div>
-<p><a href="docs/getting_started/" class="button">Read the Docs</a>
-<a href="https://pypi.org/project/pyevoea/" class="button">View on PyPI</a></p>
+  </main>
 </div>
-
-
-<div><center>
-<picture class="nav_logo" data-lit="https://ol1veir4s.github.io/pyevoea/images/index.png" data-dark="https://ol1veir4s.github.io/pyevoea/images/index.png">
-  <img src="https://ol1veir4s.github.io/pyevoea/images/index.png" alt="Visual Comparison of Algorithms">
-</picture>
-<p>Example output from an <a href="https://networkx.org/documentation/stable/reference/generated/networkx.generators.community.LFR_benchmark_graph.html">LFR benchmark graph</a> made in 0.42ms.</p>
-</center>
-</div>
-
-</section>
-
-
-</div>
-      </div></div><script>
+</div><script>
 
 const copy_text = 'Copy';
 const copied_text = 'Copied';
