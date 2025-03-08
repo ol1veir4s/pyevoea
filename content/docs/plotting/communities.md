@@ -1,6 +1,6 @@
 +++
 Title = "Visualizing Communities Detected"
-weight = 1
+weight = 105
 +++
 
 ## Introduction

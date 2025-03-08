@@ -43,11 +43,18 @@ source .venv/bin/activate
 With your virtual environment activated, install the `re-mocd` package:
 
 ```bash
-pip install re-mocd
+pip install pyevoea
 ```
 
-## Next Steps
+{{< tip >}}
 
-Discover the algorithms designed for various network environments. Depending on your network configuration, some may perform better than others. The image below offers a simplified visual comparison to help you choose the optimal solution.
+It's wise install `networkx` and `matplotlib` together!
 
-{{< picture "comparisons.png" "comparisons.png" "Visual Comparison of Algorithms" >}}
+```bash
+pip install networkx matplotlib
+```
+
+{{< /tip >}}
+
+
+> Discover the algorithms designed for various network environments. Depending on your network configuration, some may perform better than others.
