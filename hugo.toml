@@ -1,4 +1,5 @@
-baseURL = "https://example.com/"
+baseURL = "https://ol1veir4s.github.io/pyevoea/"
+publishDir = "docs"
 title = "pyevoea"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
