@@ -26,7 +26,7 @@ Prerequisites Ensure that you have installed the necessary libraries and the mod
 re_mocd 0.2.3
 Step 1: Prepare Your Graph We will use a sample graph for demonstration purposes.">
 <meta itemprop="dateModified" content="2025-03-07T20:49:36-03:00" />
-<meta itemprop="wordCount" content="172">
+<meta itemprop="wordCount" content="193">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Non-Dominated Sorting Genetic Algorithm 2"/>
 <meta name="twitter:description" content="Introduction In this guide, we&#39;ll explore how to use the nsga_ii function for community detection on a NetworkX graph. The NSGA-II algorithm employs a multi-objective approach to identify community structures within networks.
@@ -181,6 +181,11 @@ Step 1: Prepare Your Graph We will use a sample graph for demonstration purposes
   </a>
 </h2>
 <p>We will use a sample graph for demonstration purposes. Here, we use the Karate Club graph:</p>
+
+<div class="tip">
+  Built for 100% compatibility with <a href="https://networkx.org/">networkx</a>, our library integrates seamlessly into your projects. (Support for weighted graphs is on the roadmap!).
+</div>
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"># Create a sample graph</span>

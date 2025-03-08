@@ -25,6 +25,11 @@ If you're using a unix-based system, you should see:
 
 We will use a sample graph for demonstration purposes. Here, we use the Karate Club graph:
 
+
+{{< tip >}}
+Built for 100% compatibility with [networkx](https://networkx.org/), our library integrates seamlessly into your projects. (Support for weighted graphs is on the roadmap!).
+{{< /tip >}}
+
 ```python
 import networkx as nx
 

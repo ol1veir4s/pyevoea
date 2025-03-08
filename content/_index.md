@@ -11,19 +11,12 @@ title = "Projects"
 {{< block "grid-2" >}}
 {{< column >}}
 
-# Python Multiobjective Evolutionary Algorithms 
+# Multiobjective Evolutionary Algorithms 
 
-**pyevoea** is a Python lib for efficient multi-objective evolutionary algorithms in community detection. It enhances performance for large-scale graph analysis. This project continues from [re-mocd](https://github.com/0l1ve1r4).  
+**pyevoea** is a Python lib for efficient multi-objective evolutionary algorithms in community detection. It enhances performance for large-scale graph analysis. This project continues from [re-mocd](https://github.com/0l1ve1r4/re-mocd).  
 
 {{< tip "warning" >}}
-Have ideas for improvement? Open a [PR](https://github.com/0l1ve1r4/re-mocd/pulls) or report an [issue](https://github.com/ol1veir4s/pyevoea/issues/new/choose) to help us evolve re-mocd further.
-{{< /tip >}}
-
-{{< tip >}}
-Built for 100% compatibility with [networkx](https://networkx.org/), our library integrates seamlessly into your projects. (Support for weighted graphs is on the roadmap!).
-
-Designed to handle large-scale networks efficiently and fast, while simultaneously optimizes multiple metrics.
-
+Have ideas for improvement? Open a [PR](https://github.com/ol1veir4s/pyevoea/pulls) or report an [issue](https://github.com/ol1veir4s/pyevoea/issues/new/choose) to help us evolve re-mocd further.
 {{< /tip >}}
 
 {{< button "docs/getting_started/" "Read the Docs" >}}{{< button "https://pypi.org/project/pyevoea/" "View on PyPI" >}}
