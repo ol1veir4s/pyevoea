@@ -2,5 +2,5 @@
 
 hugo 
 git add .
-git commit -m "publish.sh: updates"
+git commit -m "deploy.sh: updates"
 git push && git pull

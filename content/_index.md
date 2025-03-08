@@ -34,11 +34,11 @@ Designed to handle large-scale networks efficiently and fast, while simultaneous
 
 <center>
   
-![re-mocd output](/images/index.png)
+{{< picture "index.png" "index.png" "Visual Comparison of Algorithms" >}}
+
 Example output from an [LFR benchmark graph](https://networkx.org/documentation/stable/reference/generated/networkx.generators.community.LFR_benchmark_graph.html) made in 0.42ms.
 
 </center>
 
 {{< /column >}}
 {{< /block >}}
-
