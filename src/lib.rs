@@ -4,9 +4,9 @@
 //! Copyright 2024 - Guilherme Santos. If a copy of the MPL was not distributed with this
 //! file, You can obtain one at https://www.gnu.org/licenses/gpl-3.0.html
 
+mod epmocd;
 mod mocd_nsga_ii;
 mod mocd_pesa_ii;
-mod pmoea;
 
 mod graph;
 mod operators;
@@ -14,7 +14,7 @@ mod utils;
 
 pub use mocd_nsga_ii::MocdNsgaII;
 pub use mocd_pesa_ii::MocdPesaII;
-pub use pmoea::PMoEAE;
+pub use epmocd::EpMoCD;
 
 use pyo3::prelude::*;
 use pyo3::types::PyDict;
@@ -53,6 +53,6 @@ fn pyevoea(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(fitness, m)?)?;
     m.add_class::<MocdNsgaII>()?;
     m.add_class::<MocdPesaII>()?;
-    m.add_class::<PMoEAE>()?;
+    m.add_class::<EpMoCD>()?;
     Ok(())
 }

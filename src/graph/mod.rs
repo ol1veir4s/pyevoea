@@ -4,8 +4,8 @@
 //! Copyright 2024 - Guilherme Santos. If a copy of the MPL was not distributed with this
 //! file, You can obtain one at https://www.gnu.org/licenses/gpl-3.0.html
 
-use rustc_hash::FxHashMap as HashMap;
-use rustc_hash::FxHashSet as HashSet;
+use rustc_hash::FxHashMap;
+use rustc_hash::FxHashSet;
 
 use std::collections::BTreeMap;
 
@@ -16,8 +16,8 @@ pub type Partition = BTreeMap<NodeId, CommunityId>;
 #[derive(Debug, Clone)]
 pub struct Graph {
     pub edges: Vec<(NodeId, NodeId)>,
-    pub nodes: HashSet<NodeId>,
-    pub adjacency_list: HashMap<NodeId, Vec<NodeId>>,
+    pub nodes: FxHashSet<NodeId>,
+    pub adjacency_list: FxHashMap<NodeId, Vec<NodeId>>,
 }
 
 impl Default for Graph {
@@ -30,8 +30,8 @@ impl Graph {
     pub fn new() -> Self {
         Graph {
             edges: Vec::new(),
-            nodes: HashSet::default(),
-            adjacency_list: HashMap::default(),
+            nodes: FxHashSet::default(),
+            adjacency_list: FxHashMap::default(),
         }
     }
 
@@ -65,19 +65,9 @@ impl Graph {
         self.edges.len()
     }
 
-    pub fn get_node_mapping(&self) -> (Vec<NodeId>, HashMap<NodeId, usize>) {
-        let nodes_vec: Vec<NodeId> = self.nodes.iter().cloned().collect();
-        let node_to_idx: HashMap<NodeId, usize> = nodes_vec
-            .iter()
-            .enumerate()
-            .map(|(idx, &node)| (node, idx))
-            .collect();
-        (nodes_vec, node_to_idx)
-    }
-
     /// Precomputes the degree of each node.
-    pub fn precompute_degrees(&self) -> HashMap<NodeId, usize> {
-        let mut degrees = HashMap::default();
+    pub fn precompute_degrees(&self) -> FxHashMap<NodeId, usize> {
+        let mut degrees = FxHashMap::default();
         for &node in &self.nodes {
             degrees.insert(node, self.adjacency_list[&node].len());
         }
@@ -85,23 +75,12 @@ impl Graph {
     }
 
     /// Detects key nodes for community detection based on degree centrality.
-    /// 
-    /// This function implements an algorithm that:
-    /// 1. Calculates the average degree of all nodes
-    /// 2. Identifies nodes with above-average degree
-    /// 3. Iteratively selects nodes with maximum degree, excluding previously selected nodes' neighbors
-    /// 
-    /// # Arguments
-    /// * `&self` - Reference to the Graph instance
-    /// 
-    /// # Returns
-    /// * `HashSet<NodeId>` - Set of key nodes identified for community detection
-    pub fn detect_key_nodes(&self) -> HashSet<NodeId> {
-        let mut kv = HashSet::default();
+    pub fn detect_key_nodes(&self) -> FxHashSet<NodeId> {
+        let mut kv = FxHashSet::default();
         let avg_degree = self.nodes.iter()
             .map(|&node| self.adjacency_list[&node].len())
             .sum::<usize>() as f64 / self.nodes.len() as f64;
-        let mut lset: HashSet<NodeId> = self.nodes.iter()
+        let mut lset: FxHashSet<NodeId> = self.nodes.iter()
             .filter(|&&node| self.adjacency_list[&node].len() as f64 > avg_degree)
             .cloned()
             .collect();
@@ -152,7 +131,7 @@ mod test {
         graph.add_edge(0, 2);
         graph.add_edge(0, 4);
 
-        let mut expected = HashMap::default();
+        let mut expected = FxHashMap::default();
         expected.insert(0, 3);
         expected.insert(2, 1);
         expected.insert(4, 1);
